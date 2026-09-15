@@ -1,14 +1,21 @@
-# Problem Statement: Power Outage Prediction & Grid Equipment Maintenance
+# Problem Statement
 
-## Context & Background
-Modern electrical power grids depend on heavy substation assets like step-up and step-down transformers. Unexpected transformer breakdowns lead to catastrophic localized blackouts, revenue loss, and risks to critical municipal infrastructure.
+## Background
 
-## Core Pain Points
-- **Fragmented Data Streams:** IoT sensor telemetry (oil temperature, vibration, dissolved gas levels) is seldom processed alongside external weather factors (ambient heat, high wind speeds).
-- **Reactive Maintenance Culture:** Grid operators frequently respond after equipment trips or fails rather than preemptively servicing assets displaying critical degradation patterns.
-- **Unoptimized Crew Dispatching:** Field engineering teams lack prioritized severity indicators, leading to delays in addressing high-impact substation anomalies.
+Modern electrical power distribution grids depend on critical substation infrastructure, primarily step-up and step-down power transformers. As energy demand surges and grid assets age, utilities rely on continuous telemetry monitoring to track asset degradation.
 
-## Target Beneficiaries
-- Electric utility dispatchers and system operators
-- Field maintenance and emergency response units
-- Regional power grid reliability engineers
+## The Problem
+
+Utility grid operators currently lack an integrated system to evaluate multi-source telemetry alongside environmental risk conditions. High ambient heat, dissolved gas concentrations (PPM), and oil temperature spikes remain siloed across disparate monitoring software, preventing real-time failure prediction before catastrophic transformer burnouts occur.
+
+## Who is Affected
+
+Electric utility dispatchers, regional power reliability engineers, and field emergency maintenance teams managing high-voltage distribution networks.
+
+## Why It Matters
+
+Unplanned utility equipment failures trigger wide-scale localized blackouts, costing utility providers millions in emergency repairs and revenue loss while interrupting critical municipal services and endangering community safety.
+
+## Why Existing Solutions Fall Short
+
+Current industry practices rely on outdated calendar-based inspection schedules or reactive alarms that trigger only *after* an asset exceeds safety thresholds. Existing tools lack dynamic GIS risk visualization and fail to automatically prioritize maintenance dispatch based on potential outage impact.
