@@ -97,9 +97,9 @@ py -m streamlit run app.py
 
 | Artifact | Link |
 |---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
+| 📹 Demo Video | Available in `demo/demo-video-link.txt` |
+| 🌐 Live Demo | Available in `demo/screenshots/` |
+| 🖼️ Screenshots | Available in `demo/screenshots/` |
 | 📊 Presentation | [See presentation/slides.pdf](presentation/) |
 
 ---
