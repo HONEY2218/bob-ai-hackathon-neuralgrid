@@ -1,7 +1,5 @@
 # 🚀 Enterprise Power Outage Prediction & Grid Equipment Failure Advisor
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
-
 ---
 
 ## 👥 Team
@@ -17,15 +15,11 @@
 
 ## 🎯 Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
-
 Power utilities face unexpected power outages and equipment failures because equipment sensor data, weather conditions, and historical incident records are not analyzed together. This makes it difficult for grid operators to identify risky equipment and plan timely maintenance and crew deployment.
 
 ---
 
 ## 💡 Solution
-
-> In 2–3 sentences: What did you build? How does it solve the problem above?
 
 We built an end-to-end telemetry risk analytics engine and interactive GIS dashboard that predicts transformer failures using IoT telemetry (oil temp, gas PPM, vibration) and environmental factors. The solution integrates an exploratory data analysis pipeline with real-time location geocoding to prioritize critical assets and automate maintenance crew dispatch directives.
 ---
@@ -70,8 +64,6 @@ We built an end-to-end telemetry risk analytics engine and interactive GIS dashb
 
 ## ⚡ How to Run
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
-
 ```bash
 # 1. Clone the repo
 git clone https://github.com/HONEY2218/bob-ai-hackathon-neuralgrid.git
@@ -107,8 +99,6 @@ py -m streamlit run app.py
 ---
 
 ## ⚠️ Known Limitations
-
-> Be honest — judges appreciate transparency over overclaiming.
 
 - Currently relies on synthetic telemetry dataset generation (`grid_data.csv`) and deterministic fallback rules due to offline environment execution constraints.
 - External Nominatim OpenStreetMap API rate limits may occasionally cause map re-rendering fallbacks for complex location queries.
