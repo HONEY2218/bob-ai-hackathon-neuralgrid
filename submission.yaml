@@ -9,51 +9,63 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — e.g., "Orion Squad"
-  track: ""                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name: "NeuralGrid"                             # REQUIRED — e.g., "Orion Squad"
+  track: "AI"                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
   lead:
-    name: ""                           # REQUIRED — e.g., "Alice Chen"
-    email: ""                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name: "Honey Patel"                           # REQUIRED — e.g., "Alice Chen"
+    email: "25cs063@charusat.edu.in"                          # REQUIRED — e.g., "alice.chen@ibm.com"
   members:
-    - name: ""                         # REQUIRED — Team member 1
-      email: ""
-    - name: ""                         # Add more members by copying the two lines above
-      email: ""
-    - name: ""
-      email: ""
+    - name: "Heni Patel"                         # REQUIRED — Team member 1
+      email: "25cs061@charusat.edu.in"
+    - name: "Krisha A. Patel"                         # Add more members by copying the two lines above
+      email: "25cs068@charusat.edu.in"
+    - name: "Hinal Patel"
+      email: "25dce083@charusat.edu.in"
 
 submission:
-  title: ""                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: "Enterprise Power Outage Prediction & Grid Equipment Failure Advisor"                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
 
   problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
-
+  
+    Power utilities face unexpected power outages and equipment failures
+    because equipment sensor data, weather conditions, and historical incident
+    records are not analyzed together. This makes it difficult for grid
+    operators to identify risky equipment and plan timely maintenance and
+    crew deployment.
+    
   solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
-
+  
+    We built an end-to-end telemetry risk analytics engine and interactive GIS dashboard that predicts transformer failures
+    using IoT telemetry (oil temp, gas PPM, vibration) and environmental factors. The solution integrates an exploratory
+    data analysis pipeline with real-time location geocoding to prioritize critical assets and automate maintenance crew 
+    dispatch directives.
+    
   key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+    - "Automated synthetic IoT telemetry generation and model training pipeline (train.py)"
+    - "Exploratory Data Analysis (EDA) engine for substation-wise risk breakdown and impact analytics (eda_analysis.py)"
+    - "Interactive Streamlit Web Dashboard featuring dynamic location geocoding via OpenStreetMap API"
+    - "Real-time GIS risk visualization with color-coded asset severity indicators on Folium maps"
+    - "Automated Priority Crew Dispatch planner based on estimated customer outage severity"                              # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
+                                  
 
   tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+    languages: ["Python"]                      # REQUIRED — e.g., ["Python", "TypeScript"]
+    frameworks: ["Streamlit"]                     # e.g., ["FastAPI", "React"]
+    ibm_technologies: ["IBM Predictive Analytics Concepts"]               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
+    databases: ["CSV File System", "Pandas Flat-File Storage"]                      # e.g., ["PostgreSQL", "Redis"]
+    other: ["Pandas", "NumPy", "Joblib", "Folium", "OpenStreetMap API"]                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
 
   what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+  
+   We are most proud of building a fully responsive, end-to-end operational pipeline that seamlessly connects low-level telemetry
+   risk calculation with live OpenStreetMap geocoding,allowing grid operators to search any real-world location and instantly view
+   priority crew dispatch advisories.
 
   known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+    Currently relies on synthetic telemetry generation and deterministic fallback rules due to system-level execution constraints, 
+    and external Nominatim API rate limits may occasionally cause map re-rendering fallbacks.
+
+# =============================================================================
 
 # =============================================================================
 # ARTIFACT LOCATIONS
