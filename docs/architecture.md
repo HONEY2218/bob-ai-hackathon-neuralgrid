@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-[Describe the overall architecture of your system. Replace the Mermaid diagram below with your actual architecture.]
+Our solution is built as a modular Python-based analytics engine with an interactive GIS dynamic web interface. It processes synthetic IoT telemetry and environmental data to generate risk predictions, asset GIS mapping, and automated dispatch directives.
 
 ```mermaid
 graph TD
@@ -19,21 +19,21 @@ graph TD
 
 | Component | Technology | Responsibility |
 |---|---|---|
-| Frontend | [e.g., React 18] | [e.g., Dashboard UI, user interaction] |
-| Backend API | [e.g., FastAPI] | [e.g., Business logic, orchestration] |
-| AI / ML | [e.g., watsonx.ai] | [e.g., Anomaly scoring, classification] |
-| Database | [e.g., PostgreSQL] | [e.g., Storing pipeline events and scores] |
-| Notifications | [e.g., Slack API] | [e.g., Alerting on threshold breaches] |
+| **Frontend & UI** | Streamlit, Folium | Interactive web dashboard, map visualization, and crew dispatch controls. |
+| **Analytics Engine** | Pandas, NumPy | Data preprocessing, risk feature engineering, and EDA metric calculations. |
+| **AI / Machine Learning** | Scikit-Learn (Random Forest), Joblib | Equipment failure prediction, risk severity scoring, and model serialization. |
+| **Geospatial Services** | OpenStreetMap (Nominatim API) | Geocoding substation addresses to live latitude/longitude coordinates. |
+| **Data Storage** | CSV File System | Lightweight local persistence for generated synthetic grid telemetry logs. |
 
 ## Data Flow
 
-[Describe how data moves through your system from input to output.]
+The NeuralGrid telemetry analytics engine processes system data sequentially from synthetic generation to interactive GIS mapping and crew alert advisories:
 
-1. [e.g., Pipeline logs are ingested via a webhook from GitHub Actions]
-2. [e.g., Logs are preprocessed and chunked into 512-token segments]
-3. [e.g., Each chunk is sent to the watsonx.ai inference endpoint]
-4. [e.g., Anomaly scores are stored in PostgreSQL]
-5. [e.g., The React dashboard polls the API every 30 seconds to refresh]
+1. **Synthetic Telemetry Generation:** Running `train.py` synthesizes IoT sensor metrics (transformer oil temperature, gas PPM, vibration, ambient weather factors) and persists them to `grid_data.csv`.
+2. **Model Training & Scoring:** Features are passed to the Scikit-Learn Random Forest pipeline to compute asset risk probability scores and save the binary model (`model.joblib`).
+3. **Analytics Processing:** `eda_analysis.py` evaluates substation-wise health breakdowns, financial outage impact predictions, and failure rate statistics.
+4. **Interactive GIS Rendering:** `app.py` loads the dataset and model, queries OpenStreetMap Nominatim API for location coordinates, and plots color-coded risk markers on a Folium map.
+5. **Crew Dispatch Advisories:** The dashboard evaluates severity thresholds and automatically triggers priority crew dispatch recommendations based on predicted customer impact.
 
 ## Security Considerations
 
