@@ -8,9 +8,9 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
+| **Team Name** | NeuralGrid |
+| **Track** | Critical Utility Infrastructure / AI & IoT Track  |
+| **Team Lead** | Honey Patel — 2 |
 | **Members** | [Name 1], [Name 2], [Name 3] |
 
 ---
