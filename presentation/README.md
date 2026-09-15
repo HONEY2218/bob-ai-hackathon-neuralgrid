@@ -1,6 +1,10 @@
 # Presentation
 
-Place your slide deck in this folder.
+This folder contains the project presentation slides for NeuralGrid.
+
+- **Presentation File:** `slides.pdf`
+- **Topic:** AI & IoT-based Grid Equipment Failure Prediction & Maintenance Advisor
+- **Team:** NeuralGrid
 
 ## Accepted Formats
 
