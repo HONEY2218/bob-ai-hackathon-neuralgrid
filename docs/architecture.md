@@ -37,14 +37,15 @@ The NeuralGrid telemetry analytics engine processes system data sequentially fro
 
 ## Security Considerations
 
-[Note any security decisions relevant to the architecture — even if basic.]
-
-- [e.g., API keys stored in environment variables, never committed to git]
-- [e.g., All API routes require a Bearer token]
-- [e.g., Database credentials rotated via IBM Secrets Manager]
+- API endpoints (OpenStreetMap) use standard HTTPS connections and are query-throttled to abide by provider usage policies.
+- No sensitive utility grid credentials, private keys, or API tokens are hardcoded or committed to the git repository.
+- Local fallback mechanisms ensure secure offline execution without exposing internal system infrastructure details.
 
 ## Scalability Notes
 
-[Optional: how would this scale beyond the hackathon prototype?]
+The current architecture relies on local flat-file storage and a Streamlit dashboard. To scale NeuralGrid for production deployment:
+
+- **Distributed IoT Streaming:** Replace flat CSV files with high-throughput time-series databases (e.g., PostgreSQL with TimescaleDB or Apache Kafka) for real-time sensor data ingestion.
+- **Microservices Deployment:** Decouple the ML inference pipeline into containerized REST API endpoints (e.g., IBM Code Engine / FastAPI) to handle parallel requests across large-scale utility grids.
 
 [e.g., "The FastAPI backend is stateless and could be horizontally scaled behind a load balancer. The watsonx.ai calls are the bottleneck and would benefit from request batching."]
