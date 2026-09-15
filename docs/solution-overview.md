@@ -1,13 +1,34 @@
 # Solution Overview
 
-The **Enterprise Power Outage Prediction & Grid Equipment Failure Advisor** provides a predictive maintenance platform integrating sensor analytics with spatial GIS intelligence.
+## What We Built
 
-## System Capabilities
+NeuralGrid is an AI and IoT-driven grid failure prediction platform. It monitors power substation health metrics in real time—such as oil temperature, vibration, and dissolved gas levels—combining telemetry with weather conditions to proactively forecast equipment risks before blackouts happen.
 
-- **Telemetry Ingestion & Simulation:** Simulates critical mechanical and chemical indicators:
-  - Dissolved Gas Analysis (DGA PPM)
-  - Transformer Oil Temperature (°C)
-  - Acoustic/Mechanical Vibration (mm/s)
-- **Multi-Factor Risk Engine:** Combines internal equipment health with external stress factors (ambient temperature and wind speed) into a normalized failure probability score.
-- **Impact-Weighted Prioritization:** Calculates severity scores by weighting failure probability against downstream customer counts, ensuring highest-impact assets are serviced first.
-- **Interactive Spatial Monitoring:** Integrates real-time geocoding via the OpenStreetMap Nominatim API, enabling operators to inspect substations in any geographic area.
+## How It Works
+
+1. Synthetic or real-time IoT sensor telemetry streams from electrical substations into the data engine.
+2. The predictive ML pipeline evaluates risk scores based on transformer temperature, dissolved gas levels, and ambient weather.
+3. High-risk substations are flagged automatically with critical severity levels and estimated maintenance timeframes.
+4. The GIS interactive dashboard visualizes affected grid locations on an open-source map for field engineering dispatch.
+
+## Architecture Diagram
+
+[IoT Telemetry Data] → [Data Preprocessing & EDA Engine] → [Scikit-Learn ML Model]
+↓
+[Interactive Folium Map] ← [Streamlit Web Interface] ← [Risk Analytics Engine]
+```
+
+## Key Design Decisions
+
+| Decision | Rationale |
+|---|---|
+| [e.g., Used watsonx.ai for anomaly detection] | [e.g., Pre-trained models reduced time-to-value vs. building from scratch] |
+| [Decision 2] | [Rationale 2] |
+| [Decision 3] | [Rationale 3] |
+
+## IBM Technologies Used
+
+[Explain specifically HOW you used each IBM technology — not just that you used it.]
+
+- **[IBM Tech 1, e.g., watsonx.ai]:** [How it was used — e.g., "Used the `ibm/granite-13b-instruct-v2` model via the Python SDK to classify anomaly types from log text."]
+- **[IBM Tech 2]:** [How it was used]
