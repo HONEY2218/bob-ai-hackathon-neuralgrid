@@ -25,11 +25,11 @@ cp .env.example .env
 
 ## Installation
 
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/HONEY2218/bob-ai-hackathon-neuralgrid.git
 cd bob-ai-hackathon-neuralgrid
 
-# 2. Install dependencies
+### 2. Install dependencies
 pip install -r requirements.txt
 
 ## Running the Application
