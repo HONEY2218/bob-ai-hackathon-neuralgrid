@@ -94,7 +94,7 @@ py -m streamlit run app.py
 | 📹 Demo Video | https://drive.google.com/file/d/1vJ0IYYcdsTTI0bl_x2pBH8vCyzGbuBgW/view?usp=sharing |
 | 🌐 Live Demo | http://localhost:8501/ |
 | 🖼️ Screenshots | Available in `demo/screenshots` |
-| 📊 Presentation |Available in `demo/slide.pdf`|
+| 📊 Presentation |Available in `presentation/ `|
 
 ---
 
