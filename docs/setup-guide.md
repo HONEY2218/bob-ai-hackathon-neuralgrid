@@ -20,26 +20,17 @@ cp .env.example .env
 
 | Variable | Description | Required |
 |---|---|---|
-Variable,Description,Required
-PORT,Local port number for Streamlit execution (default: 8501),No
-NOMINATIM_USER_AGENT,User agent header for OpenStreetMap API requests,No
+| `PORT` | Local port number for Streamlit execution (default: 8501) | No |
+| `NOMINATIM_USER_AGENT` | User agent header for OpenStreetMap API requests | No |
 
 ## Installation
 
-```bash
 # 1. Clone the repository
-git clone https://github.com/[your-org]/[your-repo].git
-cd [your-repo]
+git clone https://github.com/HONEY2218/bob-ai-hackathon-neuralgrid.git
+cd bob-ai-hackathon-neuralgrid
 
-# 2. Install backend dependencies
-[your command — e.g.: pip install -r requirements.txt]
-
-# 3. Install frontend dependencies (if applicable)
-[your command — e.g.: cd frontend && npm install]
-
-# 4. Set up the database (if applicable)
-[your command — e.g.: python manage.py migrate]
-```
+# 2. Install dependencies
+pip install -r requirements.txt
 
 ## Running the Application
 
