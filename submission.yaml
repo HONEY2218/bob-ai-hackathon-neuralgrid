@@ -51,7 +51,7 @@ submission:
   tech_stack:
     languages: ["Python"]                      # REQUIRED — e.g., ["Python", "TypeScript"]
     frameworks: ["Streamlit"]                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: ["IBM Predictive Analytics Concepts"]               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
+    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
     databases: ["CSV File System", "Pandas Flat-File Storage"]                      # e.g., ["PostgreSQL", "Redis"]
     other: ["Pandas", "NumPy", "Joblib", "Folium", "OpenStreetMap API"]                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
 
@@ -75,7 +75,7 @@ artifacts:
   source_code: "src/"
   setup_guide: "docs/setup-guide.md"
   architecture_doc: "docs/architecture.md"
-  demo_video: "demo/demo-video-link.txt"   # URL to hosted video (YouTube, Loom, Box)
-  live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
+  demo_video: "https://drive.google.com/file/d/1vJ0IYYcdsTTI0bl_x2pBH8vCyzGbuBgW/view?usp=sharing"   # URL to hosted video (YouTube, Loom, Box)
+  live_demo: "http://localhost:8501/"      # URL to deployed demo (optional)
   screenshots: "demo/screenshots/"
   presentation: "presentation/"
