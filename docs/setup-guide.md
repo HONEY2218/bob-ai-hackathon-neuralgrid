@@ -51,6 +51,7 @@ Run the automated pipeline script to synthesize telemetry, train the model, and 
 python src/train.py
 python src/eda_analysis.py
 streamlit run src/app.py
+```
 
 ## Troubleshooting
 
