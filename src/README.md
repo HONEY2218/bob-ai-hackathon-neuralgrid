@@ -1,6 +1,11 @@
 # Source Code
 
-Place all your project's source code in this folder.
+This directory contains the primary application modules for NeuralGrid.
+
+- `app.py` - Streamlit Web Application and Folium GIS map renderer
+- `train.py` - Synthetic IoT telemetry dataset generator and model training pipeline
+- `eda_analysis.py` - Exploratory Data Analysis module for substation risk analytics
+- `.env.example` - Example environment variables configuration file
 
 ## Structure Guidelines
 
