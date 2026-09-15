@@ -52,7 +52,6 @@ python src/train.py
 python src/eda_analysis.py
 streamlit run src/app.py
 ```
-
 ## Troubleshooting
 
 | Issue | Solution |
@@ -60,5 +59,6 @@ streamlit run src/app.py
 | `ModuleNotFoundError` | Run `pip install -r requirements.txt` to install missing packages. |
 | Map markers not displaying | Check internet connection required for OpenStreetMap API tile fetching. |
 | Model missing error | Run `python src/train.py` first to generate `grid_data.csv` and `model.joblib`. |
-e up db`] |
+
+
 | [e.g., watsonx.ai 401 error] | [e.g., Check `WATSONX_API_KEY` in your `.env` file] |
