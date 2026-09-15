@@ -1,6 +1,10 @@
 # Screenshots
 
-Place your application screenshots in this folder.
+Screenshots showcasing NeuralGrid UI, risk assessment, dynamic GIS map view, and EDA dashboard components.
+
+- `landing_page.png` - Dashboard overview and system entry
+- `main_feature.png` - Real-time asset risk calculation and GIS map visualization
+- `output_or_results.png` - Priority crew dispatch advisories and analytical report breakdown
 
 ## Naming Convention
 
