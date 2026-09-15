@@ -74,21 +74,20 @@ We built an end-to-end telemetry risk analytics engine and interactive GIS dashb
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/HONEY2218/bob-ai-hackathon-neuralgrid.git
-cd bob-ai-hackathon-neuralgrid
+git clone https://github.com/[your-repo].git
+cd [your-repo]
 
 # 2. Install dependencies
-py -m pip install --only-binary=:all: numpy pandas joblib streamlit folium streamlit-folium
+[your install command here]
 
-# 3. Generate dataset and train predictive engine
-cd src
-py train.py
+# 3. Configure environment
+cp .env.example .env
+# Edit .env with your values
 
-# 4. View CLI Analytics Report
-py eda_analysis.py
+# 4. Run the project
+[your run command here]
+```
 
-# 5. Launch Interactive Web Dashboard
-py -m streamlit run app.py
 
 
 ---
