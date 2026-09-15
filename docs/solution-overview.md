@@ -26,5 +26,3 @@ NeuralGrid is an AI and IoT-driven grid failure prediction platform. It monitors
 ## IBM Technologies Used
 
 - **IBM Granite / AI Framework Alignment:** Formatted telemetry pipeline and predictive risk scoring algorithms designed for enterprise utility monitoring workflows.
-
-- **IBM Granite / AI Framework Alignment:** Formatted telemetry pipeline and predictive risk scoring algorithms designed for enterprise utility monitoring workflows.
