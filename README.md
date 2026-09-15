@@ -7,7 +7,7 @@
 | Field | Value |
 |---|---|
 | **Team Name** | NeuralGrid |
-| **Track** | Critical Utility Infrastructure / AI & IoT Track  |
+| **Track** | AI |
 | **Team Lead** | Honey Patel — 25cs063@charusat.edu.in |
 | **Members** | Heni Patel, Krisha A.Patel, Hinal Patel |
 
@@ -93,8 +93,8 @@ py -m streamlit run app.py
 |---|---|
 | 📹 Demo Video | https://drive.google.com/file/d/1vJ0IYYcdsTTI0bl_x2pBH8vCyzGbuBgW/view?usp=sharing |
 | 🌐 Live Demo | http://localhost:8501/ |
-| 🖼️ Screenshots | Available in `demo/screenshots/` |
-| 📊 Presentation |Available in `demo/slide.pdf/`|
+| 🖼️ Screenshots | Available in `demo/screenshots` |
+| 📊 Presentation |Available in `demo/slide.pdf`|
 
 ---
 
