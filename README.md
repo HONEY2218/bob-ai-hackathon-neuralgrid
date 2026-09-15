@@ -10,8 +10,8 @@
 |---|---|
 | **Team Name** | NeuralGrid |
 | **Track** | Critical Utility Infrastructure / AI & IoT Track  |
-| **Team Lead** | Honey Patel — 2 |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Lead** | Honey Patel — 25cs063@charusat.edu.in |
+| **Members** | Heni Patel, Krisha A.Patel, Hinal Patel |
 
 ---
 
@@ -19,7 +19,7 @@
 
 > In 2–3 sentences: What problem does your project solve? Who experiences this problem?
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
+Power utilities face unexpected power outages and equipment failures because equipment sensor data, weather conditions, and historical incident records are not analyzed together. This makes it difficult for grid operators to identify risky equipment and plan timely maintenance and crew deployment.
 
 ---
 
@@ -27,30 +27,27 @@
 
 > In 2–3 sentences: What did you build? How does it solve the problem above?
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
-
+We built an end-to-end telemetry risk analytics engine and interactive GIS dashboard that predicts transformer failures using IoT telemetry (oil temp, gas PPM, vibration) and environmental factors. The solution integrates an exploratory data analysis pipeline with real-time location geocoding to prioritize critical assets and automate maintenance crew dispatch directives.
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
-
+- **Feature 1:** Automated synthetic IoT telemetry generation and model training pipeline (`train.py`)
+- **Feature 2:** Exploratory Data Analysis (EDA) engine for substation-wise risk breakdown and impact analytics (`eda_analysis.py`)
+- **Feature 3:** Interactive Streamlit Web Dashboard featuring dynamic location geocoding via OpenStreetMap API (`app.py`)
+- **Feature 4:** Real-time GIS risk visualization with color-coded asset severity indicators on Folium maps
+- **Feature 5:** Automated Priority Crew Dispatch planner based on estimated customer outage severity
 ---
 
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
 |---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
-
+| **Languages** | Python |
+| **Frameworks** | Streamlit |
+| **IBM Technologies** | IBM Predictive Analytics Concepts |
+| **Databases** | CSV File System, Pandas Flat-File Storage |
+| **Other** | Pandas, NumPy, Joblib, Folium, OpenStreetMap API |
 ---
 
 ## 📁 Repository Structure
@@ -77,19 +74,22 @@
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+git clone https://github.com/HONEY2218/bob-ai-hackathon-neuralgrid.git
+cd bob-ai-hackathon-neuralgrid
 
 # 2. Install dependencies
-[your install command here]
+py -m pip install --only-binary=:all: numpy pandas joblib streamlit folium streamlit-folium
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
+# 3. Generate dataset and train predictive engine
+cd src
+py train.py
 
-# 4. Run the project
-[your run command here]
-```
+# 4. View CLI Analytics Report
+py eda_analysis.py
+
+# 5. Launch Interactive Web Dashboard
+py -m streamlit run app.py
+
 
 ---
 
@@ -108,14 +108,14 @@ cp .env.example .env
 
 > Be honest — judges appreciate transparency over overclaiming.
 
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
-
+- Currently relies on synthetic telemetry dataset generation (`grid_data.csv`) and deterministic fallback rules due to offline environment execution constraints.
+- External Nominatim OpenStreetMap API rate limits may occasionally cause map re-rendering fallbacks for complex location queries.
 ---
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+## 🏅 What We're Most Proud Of
+
+We are most proud of building a fully responsive, end-to-end operational pipeline that seamlessly connects low-level IoT telemetry risk calculation with live OpenStreetMap geocoding. This enables grid operators to search any real-world location and instantly view priority crew dispatch advisories mapped directly onto actual spatial infrastructure.
 
 ---
