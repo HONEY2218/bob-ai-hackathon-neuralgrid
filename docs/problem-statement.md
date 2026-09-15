@@ -1,21 +1,14 @@
-# Problem Statement
+# Problem Statement: Power Outage Prediction & Grid Equipment Maintenance
 
-## Background
+## Context & Background
+Modern electrical power grids depend on heavy substation assets like step-up and step-down transformers. Unexpected transformer breakdowns lead to catastrophic localized blackouts, revenue loss, and risks to critical municipal infrastructure.
 
-[Describe the broader context. What domain or industry does this problem belong to? What situation creates the problem?]
+## Core Pain Points
+- **Fragmented Data Streams:** IoT sensor telemetry (oil temperature, vibration, dissolved gas levels) is seldom processed alongside external weather factors (ambient heat, high wind speeds).
+- **Reactive Maintenance Culture:** Grid operators frequently respond after equipment trips or fails rather than preemptively servicing assets displaying critical degradation patterns.
+- **Unoptimized Crew Dispatching:** Field engineering teams lack prioritized severity indicators, leading to delays in addressing high-impact substation anomalies.
 
-## The Problem
-
-[State the problem clearly and specifically. Avoid vague statements like "things are slow" — instead say "Operations teams spend an average of 45 minutes per incident diagnosing pipeline failures because logs are scattered across 6 different tools."]
-
-## Who is Affected
-
-[Describe the specific user or persona experiencing this problem. Be concrete — not "developers" but "backend engineers managing CI/CD pipelines in enterprises with 50+ microservices."]
-
-## Why It Matters
-
-[What is the cost of this problem? Lost time? Revenue? Safety risk? Frustration? Quantify if possible.]
-
-## Why Existing Solutions Fall Short
-
-[Briefly explain what people currently do and why it doesn't fully solve the problem. This sets up why your solution is needed.]
+## Target Beneficiaries
+- Electric utility dispatchers and system operators
+- Field maintenance and emergency response units
+- Regional power grid reliability engineers
