@@ -102,7 +102,7 @@ py -m streamlit run app.py
 | 📹 Demo Video | https://drive.google.com/file/d/1vJ0IYYcdsTTI0bl_x2pBH8vCyzGbuBgW/view?usp=sharing |
 | 🌐 Live Demo | http://localhost:8501/ |
 | 🖼️ Screenshots | Available in `demo/screenshots/` |
-| 📊 Presentation |  |
+| 📊 Presentation |Available in `demo/slide.pdf/`|
 
 ---
 
@@ -116,7 +116,7 @@ py -m streamlit run app.py
 
 ## 🏅 What We're Most Proud Of
 
-## 🏅 What We're Most Proud Of
+
 
 We are most proud of building a fully responsive, end-to-end operational pipeline that seamlessly connects low-level IoT telemetry risk calculation with live OpenStreetMap geocoding. This enables grid operators to search any real-world location and instantly view priority crew dispatch advisories mapped directly onto actual spatial infrastructure.
 
