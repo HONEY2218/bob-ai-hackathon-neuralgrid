@@ -1,4 +1,4 @@
-# 🚀 [Your Project Title Here]
+# 🚀 Enterprise Power Outage Prediction & Grid Equipment Failure Advisor
 
 > ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
 
